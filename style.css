@@ -58,7 +58,7 @@ nav ul li a:hover::after{
 }
 
 .about-section{
-    background: url(pic.jpg) no-repeat left;
+    background: url(Images/1674225010996.jpg) no-repeat left;
     background-size: 55%;
     background-color: black;
     overflow: hidden;
@@ -87,7 +87,7 @@ nav ul li a:hover::after{
     margin-bottom: 40px;
 }
 
-.skills{
+.Socials{
     display: flex;
     justify-content: space-between;
     font-weight: 700;
