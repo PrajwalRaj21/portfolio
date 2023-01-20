@@ -58,14 +58,3 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: red;
 }
-
-#about{
-    padding: 80x 0;
-    color: grey;
-}
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-}
