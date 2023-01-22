@@ -20,9 +20,51 @@
             background-image: linear-gradient(to right, teal, grey);
             background-position: center;
             background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content:center;
 
         }
         
+        form{
+            width: 90%;
+            max-width: 600px;
+        }
+        
+        .input-group{
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            outline: 0;
+            border: 1px solid #fff;
+            color: #fff;
+            background:transparent;
+            font-size: 15px;
+        }
+        label{
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            color: #fff;
+            cursor: text;
+       }
+       button{
+        padding: 10px 0;
+        color: #fff;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #fff;
+        width: 100%;
+        cursor: pointer;
+
+       }
+       
 
         
     </style>
@@ -40,7 +82,7 @@
             <input type="text" id="email" required>
             <label for="email">Email Id</label>
         </div>
-        <div class="inpur-group">
+        <div class="input-group">
             <textarea id="message" rows="5"></textarea>
             <label for="message">Your Message</label>
         </div>
