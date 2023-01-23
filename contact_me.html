@@ -5,7 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <script src="https://kit.fontawesome.com/f06b4ed714.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_me.html">About</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
 <body>
     <style>
         *{
@@ -62,9 +74,15 @@
         border: 1px solid #fff;
         width: 100%;
         cursor: pointer;
+    }
 
-       }
-       
+    input:focus~label{
+        top: -35px;
+        font-size: 14px;
+        
+    }
+
+      
     </style>
 
 
@@ -72,22 +90,21 @@
         <form>
         <div class="input-group">
             <input type="text" id="name" required>
-            <label for="name">Your Name</label>
+            <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
         </div>
         <div class="input-group">
             <input type="text" id="Phone Number" required>
-            <label for="Phone Number">Your Phone Number</label>
+            <label for="Phone Number"><i class="fa-solid fa-phone"></i>Your Phone Number</label>
         </div>
         <div class="input-group">
             <input type="text" id="email" required>
-            <label for="email">Email Id</label>
+            <label for="email"><i class="fa-solid fa-at"></i>Email Id</label>
         </div>
         <div class="input-group">
             <textarea id="message" rows="5"></textarea>
-            <label for="message">Your Message</label>
+            <label for="message"><i class="fa-solid fa-envelope"></i>Your Message</label>
         </div>
-        <button type="submit">SUBMIT</button>
-        
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i>SUBMIT</button>
         </form>
 
     </div>
