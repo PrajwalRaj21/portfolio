@@ -5,9 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobbies</title>
-</head>
-<body>
+  
     
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, teal, grey);
+}
+
+.inner{
+    padding-top: 20px;
+
+}
+.header{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    position: relative;
+}
+.header::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies-title h3{
+    color:black;
+
+    margin: 0.5rem;
+}
+
+.skill-icon{
+    width: 50px;
+
+
+}
+
+
+</style>
+<body>
+   
     <div class="inner">
         <div class="header">
             <h1>My Hobbies</h1>
@@ -16,7 +98,7 @@
             <div class="hobbies-box">
                 <div class="hobbies-title">
                    <div class="image">
-                    <img src="img/html.png">
+                    <img src="img/html.png" class="skill-icon">
 
                    </div>
                    <h3>STUDYING</h3>
@@ -26,7 +108,7 @@
             <div class="hobbies-box">
                 <div class="hobbies-title">
                    <div class="image">
-                    <img src="img/html.png">
+                    <img src="img/html.png" class="skill-icon">>
 
                    </div>
                    <h3>READING</h3>
@@ -37,7 +119,7 @@
             <div class="hobbies-box">
                 <div class="hobbies-title">
                    <div class="image">
-                    <img src="img/html.png">
+                    <img src="img/html.png" class="skill-icon">
 
                    </div>
                    <h3>TRAVELING</h3>
@@ -48,7 +130,7 @@
             <div class="hobbies-box">
                 <div class="hobbies-title">
                    <div class="image">
-                    <img src="img/html.png">
+                    <img src="img/html.png" class="skill-icon">
 
                    </div>
                    <h3>MEDITATION</h3>
@@ -59,18 +141,18 @@
             <div class="hobbies-box">
                 <div class="hobbies-title">
                    <div class="image">
-                    <img src="img/html.png">
+                    <img src="img/html.png" class="skill-icon">
 
                    </div>
                    <h3>RESEARCH</h3>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>    <
+            </div>    
                 
             <div class="hobbies-box">
                 <div class="hobbies-title">
                    <div class="image">
-                    <img src="img/html.png">
+                    <img src="img/html.png" class="skill-icon">
 
                    </div>
                    <h3>STUDYING</h3>
