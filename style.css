@@ -119,39 +119,3 @@ h2{
         padding: 60px;
     }
 }
-footer {
-    background-color: #cccccc;
-    padding: 20px 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1170px;
-    margin: 0 auto;
-  }
-  
-  .icons a {
-    font-size: 20px;
-    color: #333;
-    margin-right: 20px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .icons a:hover {
-    color: #555;
-  }
-  
-  .buttons a {
-    color: #333;
-    font-size: 16px;
-    margin-right: 20px;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-  }
-  
-  .buttons a:hover {
-    color: #555;
-  }
-  
