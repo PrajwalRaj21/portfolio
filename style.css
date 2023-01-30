@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background:teal;
+    background:t#aaa;
     color:#fff;
 }
 
@@ -60,7 +60,7 @@ nav ul li a:hover::after{
 .about-section{
     background: url(Images/1674225010996.jpg) no-repeat left;
     background-size: 55%;
-    background-color: teal;
+    background-color: grey;
     overflow: hidden;
     padding: 100px 0;
 }
@@ -93,20 +93,7 @@ h2{
     margin-bottom: 40px;
 }
 
-.socials{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-}
-.social-text {
-    color: black; /* Default color */
-  }
-  
-  .social-text:hover {
-    color: #fff; /* Color when hovered */
-  }
-  
+
 
 @media screen and (max-width:1200px){
     .inner-container{
@@ -132,3 +119,39 @@ h2{
         padding: 60px;
     }
 }
+footer {
+    background-color: #cccccc;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .icons a {
+    font-size: 20px;
+    color: #333;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .icons a:hover {
+    color: #555;
+  }
+  
+  .buttons a {
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .buttons a:hover {
+    color: #555;
+  }
+  
