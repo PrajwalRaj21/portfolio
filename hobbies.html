@@ -1,216 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hobbies</title>
-  
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
 </head>
-<style>
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin:10px 20px;
-}
-
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-
-}
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: black;
-    position:absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
-
-body{
-    background-color: grey;
-}
-
-.inner{
-    padding-top: 20px;
-
-}
-.header{
-    text-align: center;
-    color: black;
-    padding: 1rem;
-    position: relative;
-}
-.header::after{
-    content:'';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: black;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem;
-    font-size: 1.2rem;
-}
-
-.skill-box{
-    padding: 1rem;
-    color: #ddd;
-    cursor: pointer;
-}
-.skill-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-.img{
-    width: 150px;
-    height: 150px;
-    position: relative;
-    border-radius: 45px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hobbies-title h3{
-    color:black;
-
-    margin: 0.5rem;
-}
-
-.skill-icon{
-    width: 150px;
-
-
-}
-
-
-
-
-
-
-
-</style>
 <body>
-   
-    <nav>
-		<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="about_me.html">About</a></li>
-			<li><a href="contact_me.html">Contact</a></li>
-			<li><a href="reference.html">Reference</a></li>
-		</ul>
-	</nav>
-    <div class="inner">
-        <div class="header">
-            <h1>My Hobbies</h1>
-        </div>
-        <div class="container">
-            <div class="hobbies-box">
+  <style>
+    
+    body{
+      background-color: orange;
+    }
 
-                
-                <div class="hobbies-title">
-                   <div class="image">
-                    <img src="https://cdn.dribbble.com/users/1040983/screenshots/14588186/media/88ecf3d892e527ed697d813b44b781de.png?compress=1&resize=400x300&vertical=top" class="skill-icon">
+    h1{
+      align-items: center;
+      text-align: center;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    h3{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+    }
+    
+    h4{
+      text-align: center;
+      font-weight: bolder;
+      font-size: large;
+    }
 
-                   </div>
-                   <h3>STUDYING</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>
-            <div class="hobbies-box">
-                <div class="hobbies-title">
-                   <div class="image">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/173/392/small/student-studying-at-home-free-vector.jpg" class="skill-icon">
+  .photos {
+    display: flex;
+  }
 
-                   </div>
-                   <h3>READING</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>   
-            
-            <div class="hobbies-box">
-                <div class="hobbies-title">
-                   <div class="image">
-                    <img src="https://static.vecteezy.com/system/resources/previews/000/134/196/original/world-travel-free-vector.jpg" class="skill-icon">
+  .photo {
+    width: 33%;
+    margin: 0.1%;
+  }
 
-                   </div>
-                   <h3>TRAVELING</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>    
-            
-            <div class="hobbies-box">
-                <div class="hobbies-title">
-                   <div class="image">
-                    <img src="https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906557.jpg?w=2000" width="150px" height="150px" class="skill-box">
+  .description {
+    font-size: x-large;
+    font-weight: bolder;
+  }
 
-                   </div>
-                   <h3>MEDITATION</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>    
-            
-            <div class="hobbies-box">
-                <div class="hobbies-title">
-                   <div class="image">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/268/807/small/illustration-of-a-research-businesswoman-vector.jpg" class="skill-icon">
+  </style>
 
-                   </div>
-                   <h3>RESEARCH</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>    
-                
-            <div class="hobbies-box">
-                <div class="hobbies-title">
-                   <div class="image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQlRQqMosvTNCmqFUlQwITlQOOUMX5uykEg&usqp=CAU" class="skill-icon">
 
-                   </div>
-                   <h3>SWIMMING</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim libero architecto necessitatibus minus nobis? Quas quis quibusdam corrupti accusamus cupiditate maxime obcaecati, eaque, vitae sapiente at voluptates aliquid necessitatibus!</p>
-            </div>
-        </main>
+<h1>My Hobbies </h1>
+<div class="photos">
+  <div class="photo">
+    <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=is&k=20&c=-4tY7VpNH-OTVrHYPFePcLWi0jzD5lcHdw8rIH-EYLM=" alt="photo" width="350px" height="350px">
+    <h1 class="description">TRAVELLING</h1>
+    <h3>Manchester, United Kingdom</h3>
+    <h4> January 10, 2023</h4>
+    
+  </div>
+  <div class="photo">
+    <img src="https://media.istockphoto.com/id/1326973460/photo/happy-businessman-looking-at-camera-and-smiling-while-standing-at-isolated-white-background.jpg?s=612x612&w=is&k=20&c=Z2oKYK5ju0Z7F1DYQEhi69PnD4t_9FKp_-3NtfIhxWU=" alt="Photo2" width="350px" height="350px">
+    <h1 class="description">SWIMMING</h1>
+    <h3>Cambridge, United Kingdom</h3>
+    <h4> January 11, 2023</h4>
+    
+  </div>
+  <div class="photo">
+    <img src="https://img.freepik.com/free-photo/smiling-confident-businesswoman-posing-with-arms-folded_1262-20950.jpg?w=996&t=st=1672912610~exp=1672913210~hmac=054662a24f167964fedf994f74d037064a8b56e26c0a3c9b6778ca21fc3379da" alt="Photo 3"  width="350px" height="350px">
+    <h1 class="description"> READING</h1>
+    <p>I have always been a reading enthusiast </p>
+    
+  </div>
+</div>
 
-        <footer>
-            <p>You can also contact me on my socials</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                
-            
-        </footer>
-        
 </body>
 </html>
