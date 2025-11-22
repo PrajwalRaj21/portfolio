@@ -1,0 +1,5 @@
+[build]
+upload.exclude = [
+  ".next/cache",
+  "node_modules"
+]
