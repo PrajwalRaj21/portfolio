@@ -1,0 +1,9 @@
+# Ignore build cache
+.next/cache
+
+# Ignore local dependencies
+node_modules
+
+# Ignore logs and temp files
+*.log
+
